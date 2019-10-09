@@ -79,9 +79,7 @@ The query your wish to execute, just replace the table name, you can add a where
 	blockintercept.batch.readerType.db_mysql.query = select * from <your_table>
 ```
 
-There are two REST GET calls that drive the batch:
-
-The query your wish to execute, just replace the table name, you can add a where predicate also
+There are two REST GET calls that drive the batch
 
 ```
 	http://localhost:8090/startAgent
