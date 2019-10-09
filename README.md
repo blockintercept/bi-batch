@@ -78,3 +78,24 @@ The query your wish to execute, just replace the table name, you can add a where
 ```
 	blockintercept.batch.readerType.db_mysql.query = select * from <your_table>
 ```
+
+There are two REST GET calls that drive the batch:
+
+The query your wish to execute, just replace the table name, you can add a where predicate also
+
+```
+	http://localhost:8090/startAgent
+```
+
+```
+	http://localhost:8090/getBlockchainData/<transactionHash>
+```
+
+The transaction hash can be captured from the logs in the following statement
+
+
+```
+19:34:17.573 [http-nio-8090-exec-5] INFO  i.b.b.writer.BlockInterceptWriter - sent data to blockchain, transaction 0xaa904b37b37ccd05a553fb98de74ce82cf8ba4cd6dfa81a6939b0225c008a363
+
+```
+ 
